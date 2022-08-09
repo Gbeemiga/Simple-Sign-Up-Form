@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>SIgnUp Form</title>
+</head>
+<body>
+    <nav>
+        <div class="nav">
+            <span class="cam">
+                <i id="tie" class="fa-solid fa-dungeon"></i>
+                <a class="id" href="#">MIGHTY ART GALLERY</a>
+            </span>
+            <div class="links">
+                <ul>
+                <li><a href="#"><i id="icon" class="fa-brands fa-fort-awesome"></i> HOME</a></li>
+                <li><a href="#"><i id="icon" class="fa-brands fa-staylinked"></i>QUICK LINKS</a></li>
+                <li><a href="#"><i id="icon" class="fa-brands fa-readme"></i>REFERENCE LETTERS</a></li>
+                </ul>
+            </div>
+            <button class="exlore">
+                LOG-IN
+            </button> 
+        </div>
+    </nav>
+    <section>
+            <h1>SIGNUP FOR A BETTER EXPERIENCE</h1>
+            <form action="#" method="post">
+                <div class="name">
+                    <div class="first">
+                        <label for="first-name">first name</label> <br>
+                        <input type="text" id="first-name" placeholder="Bob.." name="first-name" required>
+                    </div>
+                    <div class="last">
+                        <label for="last-name">last name</label><br>
+                        <input type="text" id="last-name" placeholder="Marley..." name="last-name" required>
+                    </div>
+                </div>
+                <div class="contact">
+                    <div class="address">
+                        <label for="address">contact address</label> <br>
+                        <input type="text" id="address" placeholder="Current Home Address" name="address">
+                    </div>
+                    <div class="phone">
+                        <label for="telephone">contact number</label> <br>
+                        <div class="number">
+                            <select name="Code" id="telephone">
+                                <option value="+114">+114</option>
+                                <option value="+131">+131</option>
+                                <option value="+233">+233</option>
+                                <option value="+234" selected>+234</option>
+                                <option value="+256">+256</option>
+                                <option value="+264">+264</option>
+                            </select>
+                            <input 
+                            type="text" placeholder="8038087096"
+                            id="telephone" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="status">
+                    <div class="age">
+                        <label for="age">age</label> <br>
+                        <input type="number" placeholder="18-99" id="age" name="age">
+                    </div>
+                    <div class="union">
+                        <p>marital status</p>
+                        <div class="stats">
+                            <div>
+                                <input type="radio" id="status" name="status" value="single" checked>
+                                <label for="single">Single</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="status" name="status" value="married">
+                                <label for="married">Married</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="status" name="status" value="divorced">
+                                <label for="divorced">Divorced</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="password">
+                    <label for="password">password</label> <br>
+                    <input type="password" id="password" name="password" placeholder="Minimum Characters (8)" required>
+                </div>
+                <div class="check">
+                    <div class="agree">
+                        <input type="checkbox" id="agree" value="agree" checked>
+                        <label for="agree">I agree to the terms and conditions</label>
+                    </div>
+                    <div class="letter">
+                        <input type="checkbox" id="letter" name="letter" value="letter" checked>
+                        <label for="letter">Sign Up For Our NewsLetter</label>
+                    </div>
+                </div>
+                <input type="button" value="submit" name="button" id="button">
+            </form>
+        </section>    
+    <footer>
+        <h1>Contact Us</h1>
+        <ul>
+            <li><i class="fa-brands fa-facebook-square"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-linkedin-in"></i></li>
+            <li><i class="fa-solid fa-phone"></i></li>
+        </ul>
+        <span>
+            &copy; MIGHTY ART GALLERY, All Rights Reserved.
+        </span>
+    </footer>
+
+    <!-- script for the icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

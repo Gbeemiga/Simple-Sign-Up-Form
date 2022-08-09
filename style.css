@@ -1,0 +1,1052 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fa@tface&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Fredoka:wght@300;400;500;600;700&family=Lemonada:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Smooch+Sans:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Fredoka:wght@300;400;500;600;700&family=Lemonada:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Smooch+Sans:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'verdana';
+}
+
+html, body {
+    height: 100vh;
+    padding: 3px;
+}
+body {
+    background-image: linear-gradient(#e2edd6, #e2edd6);
+}
+
+/* styling the nav */
+
+nav {
+    background-image: url(./Assets/gym.jpg);
+    padding:20px 4% 10px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 15px;
+    gap: 30px;
+    opacity: 0.8;
+}
+nav .nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    border-radius: 15px;
+    gap: 30px;
+    opacity: 1;
+}
+
+nav .cam #tie {
+    width: 50px;
+    height: 50px;
+    color: #e2edd6;
+}
+
+nav .cam .id {
+    text-decoration: none;
+    font-family: cursive;
+    font-weight: 800;
+    font-size: 1.1em;
+    color: #e2edd6;
+}
+
+nav .links {
+    display: flex;
+    align-items: baseline;
+}
+nav .links ul {
+    display: inline-flex;
+    list-style-type: none;
+}
+nav .links ul li a {
+    text-decoration: none;
+    color: #e2edd6;
+    font-weight: 300;
+    padding: 20px;
+    transition: 1s;
+}
+
+
+
+nav .links ul li a:hover {
+    border: 10px;
+    border-radius: 5px;
+    border-color: bisque;
+    animation: forwards;
+    animation-duration: 1s;
+    background-color: aliceblue;
+    color: black;
+}
+
+nav .links #icon  {
+   margin-right : 5px;
+}
+
+nav .nav button {
+    border: 1px solid #e2edd6;
+    border-radius: 15px;
+    height: 40px;
+    width: 200px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    font-family: Acme ;
+    color: #e2edd6;
+    position: relative;
+    top: -10px;
+    box-shadow: inset;
+    background-color: #1a1a18;
+    transition: 1s;
+    /* background-image: url(./Assets/leaves.jpg); */
+}
+
+nav .nav button:hover {
+    background-color:aliceblue;
+    color: black;
+    box-shadow: inset 0 0 15px 10px white;
+}
+
+/* styling the section */
+
+body section {
+    padding:10px 100px;
+    opacity: .8;
+    /* background-image: url(./Assets/white.jpg); */
+    background-color: #1a1a18;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 15px;
+    border: solid 2px rgb(98, 97, 97);
+    box-shadow: 0 0 15px black;
+    width: 70%;
+    position: relative;
+    left: 240px;
+}
+
+/* styling the h1 */
+
+body section h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    background-color: #000000;
+    opacity: 0.9;
+    color: #eaefe5;
+    font-family: 'acme';
+    letter-spacing: 2px;
+    border-radius: 15px;
+    padding: 20px 10px;
+}
+
+/* styling the form*/
+form {
+    opacity: 1;
+}
+/* name section */
+
+form .name {
+    padding: 30px 0px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 35px;
+}
+
+.name input {
+    background-color: #ebf1e1;
+    width: 300px;
+    height: 50px;
+    padding: 20px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    border-bottom:5px solid #000000;
+}
+
+.name input::placeholder {
+    font-style: oblique;
+    font-family: cursive;
+    font-size: medium;font-weight: 300;
+    letter-spacing: 1px;
+}
+
+form .name .first {
+    position: relative;
+    left: -5px;
+}
+
+.name .first label {
+    font-size: 1.1em;
+    font-variant: small-caps;
+    background-color: #1a1a18;
+    color: #eaefe5;
+    opacity: .7;
+    padding: 5px 10px;
+    border-right: 3px solid #e2edd6;
+    border-left: solid 3px #e2edd6;
+    border-radius: 20px;
+    position: relative;
+    left: -77px;
+    z-index: -1
+}
+
+.name .last label {
+    font-size: 1.1em;
+    font-variant: small-caps;
+    background-color: #1a1a18;
+    color: #eaefe5;
+    opacity: .7;
+    padding: 5px 10px;
+    border-right: 3px solid #e2edd6;
+    border-left: solid 3px #e2edd6;
+    border-radius: 20px;
+    position: relative;
+    left: 80px;
+    z-index: -1
+}
+
+/* contact section */
+
+form .contact {
+    display: flex;
+    padding: 10px 40px;
+    justify-content: space-evenly;
+}
+
+.contact input {
+    background-color: #ebf1e1;
+    width: 300px;
+    height: 50px;
+    padding: 20px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    border-bottom:5px solid #000000;
+}
+
+form .contact .address label {
+    font-size: 1.1em;
+    font-variant: small-caps;
+    background-color: #1a1a18;
+    color: #eaefe5;
+    opacity: .7;
+    padding: 5px 10px;
+    border-right: 3px solid #e2edd6;
+    border-left: solid 3px #e2edd6;
+    border-radius: 20px;
+    position: relative;
+    left: -47px;
+    z-index: -1
+}
+
+form .contact .phone label {
+    font-size: 1.1em;
+    font-variant: small-caps;
+    background-color: #1a1a18;
+    color: #eaefe5;
+    opacity: .7;
+    padding: 5px 10px;
+    border-right: 3px solid #e2edd6;
+    border-left: solid 3px #e2edd6;
+    border-radius: 20px;
+    position: relative;
+    left: 98px;
+    z-index: -1
+}
+
+form .contact .phone .number {
+    display: flex;
+    gap: 0px;
+}
+
+form .contact .phone select {
+    background-color: #ebf1e1;
+    padding: 13px 15px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    border-bottom:5px solid #000000;
+}
+
+form .contact .phone select option {
+    background-color: #1a1a18;
+    color: #eaefe5;
+    opacity: .7;
+    padding: 5px 10px;
+}
+
+/* Status Section */
+
+form .status {
+    display: flex;
+    padding: 20px 0px 20px;
+    justify-content: space-evenly;
+}
+
+form .status .age input {
+    background-color: #ebf1e1;
+    width: 300px;
+    height: 50px;
+    padding: 20px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    border-bottom:5px solid #000000;  
+}
+
+form .status .age label {
+    font-size: 1.1em;
+    font-variant: small-caps;
+    background-color: #1a1a18;
+    color: #eaefe5;
+    opacity: .7;
+    padding: 5px 10px;
+    border-right: 3px solid #e2edd6;
+    border-left: solid 3px #e2edd6;
+    border-radius: 20px;
+    position: relative;
+    left: -107px;
+    z-index: -1
+}
+
+form .union {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -11px;
+    left: 2px;
+}
+
+form .status .union .stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #ebf1e1;
+    width:350px;
+    height: 50px;
+    padding: 20px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    border-bottom:5px solid #000000;
+    z-index: 1;  
+}
+
+form .status .union .stats input::-ms-check {
+    background-color: #1a1a18;
+}
+
+form .status .union .stats label {
+    font-style: oblique;
+    font-family: cursive;
+    font-size: medium;font-weight: 300;
+    letter-spacing: 1px;
+}
+
+form .status .union p {
+    font-size: 1.1em;
+    font-variant: small-caps;
+    background-color: #1a1a18;
+    color: #eaefe5;
+    opacity: .7;
+    padding: 5px 15px;
+    border-right: 3px solid #e2edd6;
+    border-left: solid 3px #e2edd6;
+    border-radius: 20px;
+    position: relative;
+    top: 3px;
+    left: 77px
+}
+
+/* Password area */
+
+form .password {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -15px;
+}
+
+form .password label {
+    font-size: 1.1em;
+    font-variant: small-caps;
+    background-color: #1a1a18;
+    color: #eaefe5;
+    opacity: .7;
+    padding: 5px 50px;
+    border-right: 3px solid #e2edd6;
+    border-left: solid 3px #e2edd6;
+    border-radius: 20px;
+    position: relative;
+    top: 22px;
+}
+
+form .password input {
+    background-color: #ebf1e1;
+    width: 400px;
+    height: 50px;
+    padding: 20px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    border-bottom:5px solid #000000;
+    z-index: 2;
+    overflow: hidden;
+}
+
+form .password input::placeholder {
+    text-align: center;
+}
+
+/* Letter Area */
+
+form .check {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+
+form .check .agree {
+    border: 3px solid grey;
+    background-color: #ebf1e1;
+    color: #1a1a18;
+    font-family: 'cursive';
+    font-weight: 800;
+    font-size: 1.1em;
+    height: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+form .check .agree input {
+    width: 15px;
+    height: 15px;
+}
+
+form .check .letter {
+    border: 3px solid grey;
+    background-color: #ebf1e1;
+    color: #1a1a18;
+    font-family: 'cursive';
+    font-weight: 800;
+    font-size: 1.1em;
+    height: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+form .check .letter input {
+    width: 15px;
+    height: 15px;
+}
+
+form #button {
+    background-color: green;
+    color: #e2edd6;
+    padding: 10px;
+    width: 300px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    font-family: "verdana";
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-variant: small-caps; 
+    margin-bottom: 15px;
+}
+
+/* Designing the footer */
+
+footer h1 {
+    padding: 10px 15px;
+    font-weight: 500;
+    font-family: 'acme';
+    font-size: 2.5rem;
+    color: #e2edd6;
+    cursor: default;
+}
+
+footer {
+    background-image: url(./Assets/gym.jpg);
+    color: white;
+    font-family: verdana;
+    height: 250px;
+    padding-top: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    opacity: 0.9;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    background-image: url(./Assets/gym.jpg);
+}
+
+footer ul li {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    font-size: 30px;
+    height: 60px;
+    width: 60px;
+    background-image: url(./Assets/gym.jpg);
+    /* line-height: 60px; */
+    border-radius: 50px;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+/* footer ul li:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    background:rgb(198, 197, 166) ;
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    z-index: -1;
+    transform: scale(0.9);
+} */
+
+footer ul li:hover {
+    background-color:rgb(240, 70, 8);
+    box-shadow: 0 0 15px #e5e6d6;
+    transform: scale(1.3);
+}
+
+body footer span {
+    color: #e2edd6;
+    font-family: 'cursive';
+    font-style: oblique;
+    font-size: smaller;
+    cursor: default;
+    background-image: url(./Assets/gym.jpg);
+}
+
+
+/* responsivity */
+
+@media screen and (max-width:1023px) {
+
+    body nav {
+        height: auto;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    body nav .nav {
+        height: auto;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    body nav .nav .cam {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    body nav .nav .cam #tie {
+        height: 40px; 
+        width: 40px; 
+    }
+
+    body nav .nav .cam #id {
+        font-size: .9em;
+    }
+
+    body nav .nav button {
+        margin-top: 10px;
+        border-radius: 15px;
+        height: 30px;
+        width: 150px;
+        font-weight: 400;
+        font-size: .8rem;
+    }
+
+    body .links ul li a {
+        font-size: 1rem;
+        padding: 20px;
+        font-weight: 300;
+    }
+
+    body section {
+        height: auto;
+        width: auto;
+        padding: 0px;
+        position: relative;
+        left: 0px;
+    }
+
+    body form {
+        height: auto;
+        width: auto;
+    }
+
+    form h1 {
+        font: 400;
+        font-size: 1rem;
+    }
+
+    form .name {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form .contact {
+        display: flex;
+        flex-direction: column;
+    }
+    form .status {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form .check > div {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    body nav .nav button {
+        border-radius: 15px;
+        height: 30px;
+        width: 120px;
+        font-weight: 400;
+        font-size: .7rem;
+    }
+
+    body .links ul li a {
+        font-size: .8rem;
+        padding: 10px;
+        font-weight: 300;
+    }
+
+    nav .links ul li a {
+        display: flex;
+        flex-direction: column;
+    }
+
+    body nav .nav button {
+        margin-top: 5px;
+    }
+
+    body section {
+        height: auto;
+        width: auto;
+        padding: 0px;
+        position: relative;
+        left: 0px;
+    }
+
+    body form {
+        height: auto;
+        width: auto;
+    }
+
+    body section h1 {
+        font-weight: 300;
+        font-size: 1.3rem;
+        letter-spacing: 0px;
+        background-color: #000000;
+    }
+
+    form .name {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    form .name .first {
+        position: relative;
+        left: 0px;
+    }
+
+    .name .first label {
+        position: relative;
+        left: 0;
+    }
+
+    .name .last label {
+        position: relative;
+        left: 0;
+    }
+
+    form .contact {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    form .contact .address{
+        flex-direction: column;
+    }
+
+    form .contact .address label {
+        position: relative;
+        width: auto;
+        left: 0px;
+    }
+
+    form .contact .phone label {
+        position: relative;
+        left: 0px !important;
+    }
+
+    form .contact .phone .number {
+        display: flex;
+        flex-direction: row;
+        gap: 1px;
+        position: relative;
+        left: 0px !important;
+    }
+
+    form .contact .phone .number input {
+        width: 230px;
+    }
+
+    form .contact .phone .number select {
+        width: 90px;
+        padding: 0px 5px;
+        border-radius: 30px;
+    }
+
+    form .status {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    form .status .age label {
+        position: relative;
+        left: 0px;
+    }
+
+    form .status .union p {
+        position: relative;
+        left: 0px;
+    }
+
+    form .status .union .stats {
+        width: 300px;
+        position: relative;
+        left: 0px;
+    }
+
+    form .status .union .stats label {
+        font-size: small;
+    }
+
+    form .password {
+        position: relative;
+        top: -32px;
+    }
+    
+    form .password label{
+        padding: 0px 20px;
+        position: relative;
+    }
+
+    form .password input{
+        width: 300px;
+        position: relative;
+        left: 0px;
+    }
+
+    body form .check .agree {
+        width: 335px !important;
+        font-weight: 600;
+        font-size: .8em;
+        padding: 10px;
+    }
+
+    form .check .agree input {
+        width: 13px;
+        height: 13px;
+    }
+    
+    body form .check .letter {
+        width: 335px !important;
+        font-weight: 600;
+        font-size: .8em;
+        padding: 10px;
+    }
+
+    form .check .letter input {
+        width: 13px;
+        height: 13px;
+    }
+
+    form #button {
+        padding: 10px;
+        width: 250px;
+        height: 40px;
+        border: none;
+        outline: none;
+        border-radius: 15px;
+        font-family: "verdana";
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media screen and (max-width:850px) {
+    body nav .nav button {
+        border-radius: 15px;
+        height: 30px;
+        width: 120px;
+        font-weight: 400;
+        font-size: .7rem;
+    }
+
+    body .links ul li a {
+        font-size: .8rem;
+        padding: 10px;
+        font-weight: 300;
+    }
+
+    nav .links ul li a {
+        display: flex;
+        flex-direction: column;
+    }
+
+    body nav .nav button {
+        margin-top: 5px;
+    }
+
+    body section {
+        height: auto;
+        width: auto;
+        padding: 0px;
+        position: relative;
+        left: 0px;
+    }
+
+    body form {
+        height: auto;
+        width: auto;
+    }
+
+    body section h1 {
+        font-weight: 300;
+        font-size: 1.7rem;
+        letter-spacing: 1px;
+        background-color: #000000;
+    }
+
+    form .name {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    form .name .first {
+        position: relative;
+        left: 0px;
+    }
+
+    .name .first label {
+        position: relative;
+        left: 0;
+    }
+
+    .name .last label {
+        position: relative;
+        left: 0;
+    }
+
+    form .contact {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    form .contact .address{
+        flex-direction: column;
+    }
+
+    form .contact .address label {
+        position: relative;
+        width: auto;
+        left: 0px;
+    }
+
+    form .contact .phone label {
+        position: relative;
+        left: 0px;
+    }
+
+    form .contact .phone .number {
+        display: flex;
+        flex-direction: row;
+        gap: 1px;
+        position: relative;
+        left: 170px;
+    }
+
+    form .contact .phone .number input {
+        width: 230px;
+    }
+
+    form .contact .phone .number select {
+        width: 90px;
+        padding: 0px 5px;
+        border-radius: 30px;
+    }
+
+    form .status {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    form .status .age label {
+        position: relative;
+        left: 0px;
+    }
+
+    form .status .union p {
+        position: relative;
+        left: 0px;
+    }
+
+    form .status .union .stats {
+        width: 300px;
+        position: relative;
+        left: 0px;
+    }
+
+    form .status .union .stats label {
+        font-size: small;
+    }
+
+    form .password {
+        position: relative;
+        top: -32px;
+    }
+    
+    form .password label{
+        padding: 4px 20px;
+        position: relative;
+    }
+
+    form .password input{
+        width: 300px;
+        position: relative;
+        left: 0px;
+    }
+
+    body form .check .agree {
+        width: 555px;
+        font-weight: 600;
+        font-size: .8em;
+        padding: 10px;
+    }
+
+    form .check .agree input {
+        width: 13px;
+        height: 13px;
+    }
+    
+    body form .check .letter {
+        width: 555px;
+        font-weight: 600;
+        font-size: .8em;
+        padding: 10px;
+    }
+
+    form .check .letter input {
+        width: 13px;
+        height: 13px;
+    }
+
+    form #button {
+        padding: 10px;
+        width: 250px;
+        height: 40px;
+        border: none;
+        outline: none;
+        border-radius: 15px;
+        font-family: "verdana";
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    form .contact .phone .number {
+        display: flex;
+        flex-direction: row;
+        gap: 1px;
+        position: relative;
+        left: 35px !important;
+    }
+
+    body form .check .agree {
+        width: 455px;
+        font-weight: 600;
+        font-size: .8em;
+        padding: 10px;
+    }
+
+    form .check .agree input {
+        width: 13px;
+        height: 13px;
+    }
+    
+    body form .check .letter {
+        width: 455px;
+        font-weight: 600;
+        font-size: .8em;
+        padding: 10px;
+    }
+
+    form .check .letter input {
+        width: 13px;
+        height: 13px;
+    }
+}
